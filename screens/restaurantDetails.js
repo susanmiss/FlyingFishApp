@@ -36,7 +36,7 @@ export default function RestaurantDetails({ navigation }) {
             ]);
         } else {
             Alert.alert('Your order has been placed :)', 'Drone on it\'s way!', [
-                { text: 'Nice!', onPress: () => navigation.navigate('Home') }
+                { text: 'Nice!', onPress: () => navigation.navigate('RestaurantsList') }
             ]);
         }
 
@@ -77,7 +77,6 @@ export default function RestaurantDetails({ navigation }) {
                     labelStyle={{ fontSize: 14, color: 'white' }}
                     style={{ marginRight: 10 }}
                     buttonSize={20}
-                    formHorizontal={true}
                     onPress={addSide => { setAddSide(addSide) }}
                 />
             </View>
@@ -197,8 +196,8 @@ const styles = StyleSheet.create({
         marginTop: '5%'
     },
     picker: {
-        marginTop: -60,
-        marginBottom: -40
+        marginTop: -40,
+        marginBottom: -60
 
     },
     radio: {

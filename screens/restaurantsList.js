@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, FlatList, TouchableOpacity, Image } from 'react-native';
+import { StyleSheet, Text, View, FlatList, TouchableOpacity, Image, ScrollView } from 'react-native';
+
 
 export default function RestaurantLists({ navigation }) {
 
@@ -18,6 +19,7 @@ export default function RestaurantLists({ navigation }) {
 
 
     return (
+
         <View style={styles.container}>
             <Text style={styles.textTitle}>Our Restaurants</Text>
             <FlatList
@@ -40,7 +42,7 @@ export default function RestaurantLists({ navigation }) {
 
 const styles = StyleSheet.create({
     container: {
-        padding: 60,
+        padding: 10,
         backgroundColor: 'rgb(36,42,52)',
         flex: 1
     },
